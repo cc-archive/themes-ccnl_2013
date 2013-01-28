@@ -1,0 +1,68 @@
+/* The container wrapping ul.dropdown */
+#navwrap {
+	float:left;
+	width:100%;
+	background: #600;
+	background: -moz-linear-gradient( top, #600, #300); /* CSS 3 */
+	font: 1.0em "Segoe UI", "Lucida Grande", Verdana, Arial, sans-serif;
+	border-top:1px solid #999;
+	border-bottom:2px solid #000;
+}
+ 
+/* Top level Unordered list */
+ul.dropdown {
+	list-style:none;
+	float:left;
+	width:100%;
+	padding: 0 10px;
+}
+ 
+ul.dropdown  li{
+	float:left; /* makes horiz list */
+	position:relative; /* hey Submenu ULs, appear below! */
+}
+ 
+ul.dropdown a {
+	padding:12px; /*space the items, occupy entire height too.*/
+	color:#eee;
+	text-decoration:none;
+	text-shadow:0 1px 0 #000;
+}
+ 
+/* Style the link hover */
+ul.dropdown li:hover a {
+	background:#444;
+	border-top:1px solid #777;
+	border-bottom: 1px solid #000;
+	border-right:1px solid #666;
+}
+ 
+/* Displays the link as blocks. */
+ul.dropdown li ul a {
+	display:block;
+}
+ 
+/* sub menus!!  */
+ 
+ul.dropdown ul {
+	list-style: none;
+	margin:0; /* Appear just below the hovering list */
+	padding:0;
+	width:200px; /* specify the width. */
+	position:absolute; /* needed */
+	z-index:500; /* specify the order */
+}
+ 
+ul.dropdown li ul {
+	top:27px; /* Positioning:Calc with top level horz list height */
+	-moz-box-shadow:0 2px 10px #000; /* CSS 3 */
+}
+ 
+ul.dropdown ul ul {
+	top:0;
+	left:100%; /* Position the sub menus to right. */
+}
+ 
+ul.dropdown ul li {
+	
+}
