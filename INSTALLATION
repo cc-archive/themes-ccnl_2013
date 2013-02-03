@@ -1,0 +1,24 @@
+INSTALLATION GUIDE CCNL_13 theme
+Following document outlines how to install and properly setup the CCNL_13 theme.
+CCNL_13 is a derivative of the currently (as of 2012) theme of CreativeCommons.org. 
+This theme is used by creativecommons.nl since january 2013.
+
+INSTALLATION
+Upload the zipped version of this theme to your Wordpress install
+or upload the unpacked version to your wordpress install folder /wp-content/themes/
+
+ACTIVATE
+Activate the theme using your theme admin area.
+
+INSTALL PLUGIN
+This theme requires the Shailan's dropdown menu plugin. Find the plugin here: http://shailan.com/wordpress/plugins/dropdown-menu/
+The plugin is styled by the theme css files
+
+SETUP WIDGETS
+This theme requires three text widgets to be activated in the widget menu's. Included CSS allows for adding two types of buttons:
+
+<div class="bucket-follow"><a target="_blank" class="btn primary" href="http://search.creativecommons.org">Search CC material</a></div>
+<div class="bucket-follow" style="right:20px;"><a class="btn secondary" href="http://creativecommons.org">International</a></div>
+
+SUPPORT
+Mail the creative commons developers list at cc-devel@lists.ibiblio.org for more help on installing this theme.
